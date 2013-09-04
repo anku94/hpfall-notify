@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc `pkg-config --cflags --libs libnotify glib-2.0` $1 -o `basename $1 .c` -lglib-2.0 -lnotify -lgobject-2.0
